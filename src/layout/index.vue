@@ -62,7 +62,8 @@ export default {
     width: 100%;
   }
   .sidebar-container{
-    width:300px;
+    width:200px;
+    min-height: 100vh
   }
   .main-container{
     flex:1;
