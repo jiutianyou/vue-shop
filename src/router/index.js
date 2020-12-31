@@ -15,6 +15,12 @@ export default new Router({
           component: () => import('@/views/dashboard/index'),
           name: 'dashboard',
           meta: { title: '首页', icon: 'home', affix: true }
+        },
+        {
+          path: '/system/user',
+          component: () => import('@/views/system/user/index'),
+          name: 'user',
+          meta: { title: '用户', icon: 'user', affix: true }
         }
       ]
     }
