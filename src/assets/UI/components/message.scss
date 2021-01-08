@@ -1,0 +1,24 @@
+.el-message-box {
+  padding: 0 $spacing-larger $spacing-larger;
+  &__header {
+    padding: $spacing-largest 0 $spacing-normal;
+  }
+  &__title {
+    @include title-primary($color-text, $color-title);
+    font-size: $font-small * 1.25;
+  }
+  &__headerbtn {
+    top: $spacing-normal;
+    right: -2px;
+  }
+  &__content {
+    font-size: 12px;
+    padding: 0;
+  }
+  &__close {
+    font-weight: bold;
+  }
+  &__btns {
+    padding: $spacing-normal 0 0;
+  }
+}

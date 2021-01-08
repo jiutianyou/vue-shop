@@ -1,0 +1,81 @@
+.el-form {
+  &--inline {
+    .el-form-item {
+      width: auto;
+    }
+  }
+  &--static {
+    .el-form-item {
+      margin-bottom: 2px !important;
+    }
+  }
+}
+.el-form-item {
+  width: 100%;
+  min-height: $form-item-height;
+  margin-bottom: $spacing-normal;
+  &__label {
+    font-size: $font-small;
+    padding-right: 0;
+    &::after {
+      float: right;
+      content: "\FF1A";
+    }
+  }
+  &__content {
+    font-size: $font-small;
+    min-height: $form-item-height;
+  }
+  &__error {
+    line-height: 1.5;
+  }
+  .el-select,
+  .el-input,
+  .el-textarea,
+  .el-cascader,
+  .el-upload,
+  .el-upload-dragger,
+  .el-autocomplete,
+  .el-date-editor {
+    width: 100%;
+  }
+}
+.el-input {
+  &__count-inner {
+    line-height: 1 !important;
+  }
+  &__suffix {
+    overflow: hidden;
+  }
+}
+.el-select {
+  &__tags {
+    left: 20px;
+  }
+  .el-tag__close.el-icon-close {
+    background: $color-disabled;
+  }
+  .el-select-dropdown__item {
+    color: $color-text;
+  }
+}
+.el-radio,
+.el-checkbox {
+  &__label {
+    font-size: $font-small;
+  }
+}
+.el-select-dropdown {
+  &__item {
+    color: $color-text;
+    &.hover,
+    &:hover {
+      background: $dropdown-hover-color !important;
+    }
+  }
+}
+.el-radio-group {
+  .el-radio:not(:last-child) {
+    margin-right: $spacing-normal !important;
+  }
+}

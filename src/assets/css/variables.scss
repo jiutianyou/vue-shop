@@ -1,0 +1,115 @@
+/* Brand Colors */
+$color-primary-base: #224573;
+$color-primary-light: #246cff;
+$color-primary-dark: #1a3558;
+
+/* Common Colors */
+$color-link: #457fe6;
+$color-title: #295bb4;
+$color-text: #4a4a4a;
+$color-default: #d2dced;
+$color-disabled: #c0c4cc;
+$color-white: #fff;
+$color-success: #33c501;
+$color-warning: #f39f11;
+$color-danger: #ff6067;
+$color-info: #8f939a;
+
+/* Border */
+$border-color-base: #d3e1ef;
+$border-color-light: #5a91f3;
+$border-radius-base: 3px;
+
+/* Fonts & Line-heights */
+$font-cn: "Microsoft Yahei";
+$font-en: "";
+$font-large: 16px;
+$font-normal: 14px;
+$font-small: 12px;
+$line-height: 30px;
+
+/* Spacings */
+$base-spacing: 10px;
+
+$spacing-largest: $base-spacing * 4;
+$spacing-larger: $base-spacing * 3;
+$spacing-large: $base-spacing * 2.5;
+$spacing-normal: $base-spacing * 2;
+$spacing-small: $base-spacing * 1.5;
+$spacing-smaller: $base-spacing * 1;
+$spacing-smallest: $base-spacing * 0.5;
+
+/* Layout */
+$content-title-bg-color: #e2ebfc;
+$content-body-bg-color: #f3f8ff;
+$content-bg-color: #eff3fa;
+
+$content-min-width: 770px;
+
+$block-padding: $base-spacing * 2.5 $base-spacing * 3.5;
+$block-bg-color: $color-white;
+$block-margin: $spacing-smaller;
+
+/* Title */
+$title-font-size-primary: $font-large;
+$title-font-size-secondary: $font-normal;
+$title-border-width: 4px;
+$title-border-style: solid;
+$title-border-color: currentColor;
+$title-border: $title-border-width $title-border-style $title-border-color;
+
+/* Menu */
+$menu-icon-color: #d0def0;
+$menu-hover-color: #2f4870;
+$menu-disc-color: #979797;
+
+/* Dropdown */
+$dropdown-hover-color: #d6e7ff;
+
+/* Tab */
+$tab-header-color-active: #4e86f9;
+$tab-secondary-border-color: $border-color-base;
+$tab-border-card-header-bg-color: #f7faff;
+$tab-border-card-header-border-color: #bcd1ef;
+
+/* Table */
+$table-head-color: #abcbf1;
+$table-stripe-color: #f7f9fd;
+$table-hover-color: $dropdown-hover-color;
+$table-item-border-color: #ecf2fa;
+$table-title-line-height: 31px; // 减去1像素边框
+$table-item-line-height: 37px; // 减去1像素边框
+
+/* Form */
+$form-item-height: 30px;
+$form-item-border-color: $border-color-base;
+
+/* Functions */
+@function genTitleBorder($color) {
+  @return $title-border-width $title-border-style $color;
+}
+
+/* Mixins */
+
+@mixin title-primary($color: $color-title, $border-color: $color-title) {
+  color: $color;
+  font-weight: bold;
+  font-size: $title-font-size-primary;
+  line-height: 1;
+  &::after {
+    display: block;
+    content: "";
+    width: 2em;
+    border-bottom: genTitleBorder($border-color) !important;
+    padding-top: $spacing-smallest !important;
+  }
+}
+
+@mixin title-secondary($color: $color-text, $border-color: $color-title) {
+  color: $color;
+  font-size: $title-font-size-secondary;
+  padding: 0 $spacing-smallest;
+  border-left: genTitleBorder($border-color);
+}
+
+/* Predefined Styles */

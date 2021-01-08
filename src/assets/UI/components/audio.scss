@@ -1,0 +1,34 @@
+// 播放器
+.eAudio {
+  .slider {
+    .el-slider__button-wrapper {
+      height: 16px;
+      width: 16px;
+      position: absolute;
+      z-index: 1001;
+      top: -6px;
+      transform: translateX(-50%);
+      background-color: transparent;
+      text-align: center;
+      user-select: none;
+      line-height: normal
+    }
+    .el-slider__runway{
+      margin: 20px 0 6px 0;
+    }
+  }
+}
+.reson_w {
+  .el-form-item__content {
+    .el-textarea {
+      .el-textarea__inner {
+        padding-left: 12px;
+      }
+    }
+  }
+}
+.reson_file{
+  .el-form-item__label{
+    margin-left: 8px;
+  }
+}

@@ -1,0 +1,33 @@
+.ips_edit_table {
+  .el-table th > .cell {
+    padding-left: 23px;
+  }
+  .el-input--mini {
+    .el-input__inner {
+      height: 30px;
+      background: transparent;
+      border-radius: 0;
+      border: 1px solid transparent;
+      &:focus {
+        background: $table-hover-color;
+        border-color: $color-primary-light;
+      }
+    }
+  }
+  .el-autocomplete {
+    height: 30px;
+    width: 100%;
+  }
+  .el-select{
+    width: 100%;
+    .is-focus {
+      .el-input__inner {
+        border-color: $color-primary-light;
+        background: transparent;
+      }
+    }
+    .el-input__suffix {
+      width: 0;
+    }
+  }
+}

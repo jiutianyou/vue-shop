@@ -1,0 +1,8 @@
+.time-select {
+  &-item {
+    font-size: $font-small;
+    &:hover {
+      background: $dropdown-hover-color;
+    }
+  }
+}

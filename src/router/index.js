@@ -17,7 +17,7 @@ export default new Router({
           meta: { title: '首页', icon: 'home', affix: true }
         },
         {
-          path: '/system/user',
+          path: '/system/user/:type',
           component: () => import('@/views/system/user/index'),
           name: 'user',
           meta: { title: '用户', icon: 'user', affix: true }
