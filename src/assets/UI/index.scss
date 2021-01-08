@@ -1,0 +1,10 @@
+/* 基础变量*/
+@import 'variables';
+/* reset */
+@import 'reset';
+/* 公共样式类 */
+@import 'common';
+/* 公共组件样式 */
+@import 'components/index';
+/* 公共页面样式 */
+@import 'layout';

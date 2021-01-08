@@ -1,0 +1,86 @@
+.color-red {
+  color: $color-danger;
+}
+.color-link {
+  color: $color-link;
+}
+.link {
+  color: $color-link;
+  cursor: pointer;
+}
+.bold {
+  font-weight: bold;
+}
+
+.float-right {
+  float: right;
+}
+.float-left {
+  float: left;
+}
+
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+
+.inline-block {
+  display: inline-block;
+}
+.block {
+  display: block;
+}
+
+.flex-start {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+@each $type in (top, right, bottom, left) {
+  .margin-#{$type}-largest {
+    margin-#{$type}: $spacing-largest;
+  }
+  .margin-#{$type}-normal {
+    margin-#{$type}: $spacing-normal;
+  }
+  .margin-#{$type}-small {
+    margin-#{$type}: $spacing-small;
+  }
+  .margin-#{$type}-smaller {
+    margin-#{$type}: $spacing-smaller;
+  }
+  .margin-#{$type}-smallest {
+    margin-#{$type}: $spacing-smallest;
+  }
+}
+
+.limit-height {
+  height: $form-item-height;
+}
+
+.hidden {
+  display: none;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

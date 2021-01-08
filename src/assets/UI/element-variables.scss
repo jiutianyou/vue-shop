@@ -1,0 +1,70 @@
+/* Colors
+-------------------------- */
+$--color-primary: #246CFF;
+$--color-success: #33C501;
+$--color-warning: #F39F11;
+$--color-danger: #FF6067;
+$--color-info: #8F939A;
+
+$--color-text-primary: #4A4A4A;
+$--color-text-regular: #4A4A4A;
+// $--color-text-secondary: #909399;
+$--color-text-placeholder: #93A5C5;
+
+
+/* Font
+-------------------------- */
+$--font-size-small: 12px;
+// $--font-color-disabled-base: #bbb;
+// $--font-line-height-primary: 24px;
+
+/* Border
+-------------------------- */
+$--border-color-base: #D3E1EF;
+$--border-color-light: mix(#fff, $--border-color-base, .8);
+$--border-color-hover: #B3CAF5;
+$--border-radius-base: 3px;
+
+/* Buttons */
+$--button-font-size: $--font-size-small;
+
+$--button-padding-vertical: 8px;
+$--button-padding-horizontal: 20px;
+
+$--button-mini-padding-vertical: $--button-padding-vertical;
+$--button-mini-padding-horizontal: $--button-padding-horizontal;
+
+/* Card
+-------------------------- */
+$--card-border-radius: 0;
+
+/* Table
+-------------------------- */
+$--table-border-color: #ECF2FA;
+
+
+/* Input
+-------------------------- */
+$--input-mini-height: 30px;
+
+/* Dropdown
+-------------------------- */
+$--dropdown-menuItem-hover-fill: #D6E7FF;
+$--dropdown-menuItem-hover-color: #224573;
+
+/* Select
+-------------------------- */
+$--select-dropdown-background: #fff !important;
+
+/* Break-point
+--------------------------*/
+$nav-width: 190px;
+$--sm: 960px - $nav-width;
+$--md: 1280px - $nav-width;
+$--lg: 1440px - $nav-width;
+$--xl: 1920px - $nav-width;
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";

@@ -1,0 +1,9 @@
+.el-menu {
+  font-family: $font-cn;
+  &--collapse {
+    width: 56px;
+    .el-submenu {
+      width: 56px;
+    }
+  }
+}

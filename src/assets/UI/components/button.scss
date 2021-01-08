@@ -1,0 +1,88 @@
+.el-button {
+  font-family: "Microsoft Yahei" !important;
+  &:not(.el-button--text) {
+    padding: 8px 20px !important;
+  }
+  &--default {
+    &:not(.is-plain):not(.el-button--primary) {
+      color: $color-primary-base;
+      background: $color-default;
+      border-color: $color-default;
+      &:hover,
+      &:focus,
+      &:active {
+        color: $color-primary-base;
+        background: mix($color-white, $color-default, 20%);
+        border-color: mix($color-white, $color-default, 20%);
+      }
+    }
+    &.is-plain {
+      color: $color-primary-base;
+      background: $color-white;
+      border-color: $color-default;
+      &:hover,
+      &:focus,
+      &:active {
+        color: $color-primary-base;
+        background: $color-default;
+        border-color: $color-default;
+      }
+    }
+  }
+  &--info {
+    &:not(.is-plain) {
+      color: $color-white;
+      background: $color-primary-base;
+      border-color: $color-primary-base;
+      &:hover,
+      &:focus,
+      &:active {
+        color: $color-white;
+        background: mix($color-white, $color-primary-base, 20%);
+        border-color: mix($color-white, $color-primary-base, 20%);
+      }
+    }
+    &.is-plain {
+      color: $color-primary-base;
+      background: $color-white;
+      border-color: $color-primary-base;
+      &:hover,
+      &:focus,
+      &:active {
+        color: $color-white;
+        background: $color-primary-base;
+        border-color: $color-primary-base;
+      }
+    }
+  }
+  &--text {
+    font-family: $font-cn;
+    color: $color-link;
+  }
+}
+
+.tb_opts i {
+  color: #578ff3;
+  margin-right: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.tb_opts i {
+  color: $color-link;
+  margin-right: 10px;
+  font-size: 16px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.tb_opts i.disabled {
+  color: $color-disabled;
+  pointer-events: none;
+}
+.tb_opts a{
+  margin-right:10px;
+}
+.opt-btn{
+  padding-left:30px;
+  background:#fff;
+}

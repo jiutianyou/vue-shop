@@ -1,0 +1,55 @@
+.el-table {
+  width: 100%;
+  &__header-wrapper {
+    th {
+      background: $table-head-color !important;
+      padding: 0 !important;
+      .cell {
+        color: $color-text;
+        height: $table-title-line-height !important;
+        line-height: $table-title-line-height !important;
+        font-weight: bold;
+      }
+    }
+  }
+  &__body {
+    td {
+      padding: 0 !important;
+      border-right: 0;
+      border-bottom-color: $table-item-border-color;
+    }
+  }
+  &__row {
+    &--striped {
+      td {
+        background: $table-stripe-color;
+      }
+    }
+    &:focus,
+    &:active,
+    &:hover {
+      td {
+        background: $table-hover-color;
+      }
+    }
+  }
+  td {
+    padding: 0 !important;
+    .cell {
+      height: $table-item-line-height;
+      line-height: $table-item-line-height;
+    }
+  }
+  &__fixed-header-wrapper {
+    th {
+      background: $table-head-color !important;
+      padding: 0 !important;
+      .cell {
+        color: $color-text;
+        height: $table-title-line-height !important;
+        line-height: $table-title-line-height !important;
+        font-weight: bold;
+      }
+    }
+  }
+}

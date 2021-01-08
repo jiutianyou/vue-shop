@@ -1,0 +1,11 @@
+.el-dropdown-menu {
+  border: 1px solid $color-primary-light;
+  background: $color-white;
+  .popper__arrow {
+    display: none;
+  }
+  .el-dropdown-menu__item {
+    color: $color-primary-base;
+    line-height: $form-item-height;
+  }
+}

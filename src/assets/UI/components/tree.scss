@@ -1,0 +1,19 @@
+/* 树形选择框 */
+.treeselect-block {
+  width: 193px;
+}
+.vue-treeselect > .vue-treeselect__control {
+  height: 26px;
+  font-size: 12px;
+}
+.vue-treeselect .vue-treeselect__value-container {
+  line-height: 26px;
+}
+.vue-treeselect .vue-treeselect__placeholder {
+  line-height: 26px;
+  padding-left: 10px;
+}
+.vue-treeselect .vue-treeselect__single-value {
+  line-height: 26px;
+  padding-left: 10px;
+}
